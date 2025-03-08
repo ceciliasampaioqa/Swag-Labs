@@ -25,10 +25,9 @@ This project consists of a set of automated tests for the web application **Swag
 
 ## ✅ **What was done**
 
-✔ Setting up the test environment with **Cypress** and **Node.js**.
-✔ Automation of the purchase flow, covering login, adding products to the cart, checkout and logout.
-✔ Use of best practices such as **Commands.js** to facilitate test maintenance.
-
+✔ Setting up the test environment with **Cypress** and **Node.js**.<br>
+✔ Automation of the purchase flow, covering login, adding products to the cart, checkout and logout.<br>
+✔ Use of best practices such as **Commands.js** to facilitate test maintenance.<br>
 ✔ Implementation of tests that validate interface elements and business rules of the application.
 
 ## General Notes
