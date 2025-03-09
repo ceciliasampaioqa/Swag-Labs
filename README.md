@@ -1,17 +1,37 @@
-# Swag Labs - Test Automation
+# Swag Labs Automated Testing Suite 🚀
 
-This project consists of a set of automated tests for the web application **Swag Labs**, a fictitious e-commerce used for testing purposes. It was developed to ensure the quality and reliability of the functionalities related to the purchase flow, from login to order completion.
+[![Cypress Version](https://img.shields.io/badge/Cypress-14.0.2-brightgreen)](https://www.cypress.io/)
+[![Qase.io Integration](https://img.shields.io/badge/Qase.io-2.0-blue)](https://qase.io)
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-✔-success)](https://github.com/features/actions)
 
-# 🛠 **Technologies Used**
+A scalable and maintainable test automation framework for the **Swag Labs** e-commerce platform. This project validates critical user journeys, integrates with Qase.io for test management, and demonstrates CI/CD readiness with GitHub Actions.
 
-**JavaScript**: Main testing language.
-**Cypress**: Testing framework for automating web applications.
-**VS Code**: Code editor used in development.
-**Node.js & npm**: Platform and package manager for running Cypress.
+---
 
-## 📂 **Project Structure**
+## 📋 Project Overview
 
-📂 `cypress/e2e/` → Contains automated tests for the purchase flow, including:
+This repository contains automated tests for **Swag Labs**, covering end-to-end scenarios from login to checkout. Built with Cypress and integrated with Qase.io, the framework emphasizes:
+
+- **Reusable custom commands** for efficient test scripting.
+- **Real-time reporting** via `cypress-qase-reporter`.
+- **CI/CD pipelines** for automated test execution.
+- **Modular architecture** aligned with Custom Commands best practices.
+
+---
+
+## 🛠️ Technical Stack
+
+- **Automation Framework**: Cypress (JavaScript)
+- **Test Management**: Qase.io
+- **CI/CD**: GitHub Actions
+- **Reporting**: Synchronized test runs with Qase.io
+- **Design Pattern**: Custom Commands
+
+---
+
+## 📂 Project Structure
+
+📂`cypress/e2e/` → Contains automated tests for the purchase flow, including:
 
 - `login.cy.js` → Tests related to user login.
 - `checkout.cy.js` → Tests of the checkout process.
@@ -19,23 +39,39 @@ This project consists of a set of automated tests for the web application **Swag
 - `product-page.cy.js` → Tests to validate the display and interaction with products.
 - `shopping-cart.cy.js` → Tests to add and remove products from the cart.
 
-📂`cypress/support/` → Custom configurations and commands for the tests.
-📂 `cypress.config.js` → Cypress configuration file.
+📂`cypress/support/` → Custom configurations and commands for the tests.<br>
+📂`cypress.config.js` → Cypress configuration file.<br>
 📂`package.json` → List of project dependencies and scripts.
 
-## ✅ **What was done**
+---
 
-✔ Setting up the test environment with **Cypress** and **Node.js**.<br>
-✔ Automation of the purchase flow, covering login, adding products to the cart, checkout and logout.<br>
-✔ Use of best practices such as **Commands.js** to facilitate test maintenance.<br>
-✔ Implementation of tests that validate interface elements and business rules of the application.
+## ⚙️ Setup & Execution
 
-## General Notes
+### Prerequisites
 
-- **Test Execution**: To run the tests, make sure to install the dependencies with `npm install` and run `npx cypress open` for the interactive mode of Cypress.
-- **Test Coverage**: This project focuses on end-to-end testing of the purchase journey.
-- **Future Improvements**: Implementation of test reports and continuous integration (CI/CD).
+- Node.js ≥ 20.x
+- To develop this task, a test management tool called QASE was used. To access the platform you will need to click on the following link and use these credentials:
+  - Qase.io ([Access Here](https://qase.io))
+  - E-mail: ceciliaqa.saucedemo@gmail.com
+  - Password: Teste@12345!
+  - Additionally, in the "Test runs" section you will find test runs for the developed test cases. There you will be able to see a demonstration of what a successful and failed test run would look like.
 
-## 🤝 **Contribution**
+### Installation
 
-Contributions are welcome! Feel free to open issues or send pull requests for improvements.
+✔ Clone the repository and Install dependencies:
+
+```bash
+git clone https://github.com/ceciliasampaioqa/Swag-Labs.git
+cd Swag-Labs
+npm install
+```
+
+### Execution
+
+✔ Use the commands below according to your need:
+
+```bash
+npm run test #Run tests in Cypress interactive mode
+npm run test:headless #Run tests in Cypress headless mode
+npm run test:qase #Run tests in Cypress headless mode and Generate reports in Qase.io
+```
