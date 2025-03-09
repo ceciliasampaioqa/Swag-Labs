@@ -1,12 +1,21 @@
-Cypress.Commands.add('gui_login', () => {
+Cypress.Commands.add('gui_login', (username = 'standard_user', password = 'secret_sauce') => {
   cy.visit('/')
-  cy.get('input[placeholder="Username"]').type('standard_user')
-  cy.get('input[placeholder="Password"]').type('secret_sauce')
+  cy.get('input[placeholder="Username"]').type(username)
+  cy.get('input[placeholder="Password"]').type(password)
   cy.get('input[name="login-button"]').click()
 })
 
-Cypress.Commands.add('addToCart', (productName) => {
-  cy.get(`[data-test="add-to-cart-${productName}"]`).click()
+Cypress.Commands.add('gui_logout', () => {
+  cy.get('button[id="react-burger-menu-btn"]').click()
+  cy.get('[data-test="logout-sidebar-link"]').click()
+})
+
+Cypress.Commands.add('addToCart', () => {
+  cy.get(`[data-test="add-to-cart-sauce-labs-backpack"]`).click()
+})
+
+Cypress.Commands.add('removeFromCart', () => {
+  cy.get('[data-test="remove-sauce-labs-backpack"]').click()
 })
 
 Cypress.Commands.add('goToCart', () => {
