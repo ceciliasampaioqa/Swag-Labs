@@ -4,7 +4,7 @@
 [![Qase.io Integration](https://img.shields.io/badge/Qase.io-2.0-blue)](https://qase.io)
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-✔-success)](https://github.com/features/actions)
 
-A scalable and maintainable test automation framework for the **Swag Labs** e-commerce platform. This project validates critical user journeys, integrates with Qase.io for test management, and demonstrates CI/CD readiness with GitHub Actions.
+A scalable and maintainable test automation framework for the **[Swag Labs](https://www.saucedemo.com/)** e-commerce platform. This project validates critical user journeys, integrates with Qase.io for test management, and demonstrates CI/CD readiness with GitHub Actions.
 
 ---
 
